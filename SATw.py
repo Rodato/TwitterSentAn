@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 #%matplotlib inline
 # Twitter App access keys for @user
+account=input("Type account name withut '@' and space: ")
 
 # Consume:
 CONSUMER_KEY    = ''
@@ -39,7 +40,7 @@ def twitter_setup():
 extractor = twitter_setup()
 
 # We create a tweet list as follows:
-tweets = extractor.user_timeline(screen_name=" ", count=2000) ##Screen name should have the account name without the @
+tweets = extractor.user_timeline(screen_name=account, count=2000) ##Screen name should have the account name without the @
 print("Number of tweets extracted: {}.\n".format(len(tweets)))
 
 # We print the most recent 5 tweets:
