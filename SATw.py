@@ -7,17 +7,22 @@ import numpy as np      # For number computing
 from IPython.display import display
 import matplotlib.pyplot as plt
 import seaborn as sns
-#%matplotlib inline
+
 # Twitter App access keys for @user
 account=input("Type account name withut '@' and space: ")
 
+consumer_key=input("CONSUMER KEY: ")
+consumer_secret=input("CONSUMER SECRET: ")
+access_token=input("ACCESS_TOKEN: ")
+access_secret=input("ACCESS_SECRET: ")
+
 # Consume:
-CONSUMER_KEY    = ''
-CONSUMER_SECRET = ''
+CONSUMER_KEY    = consumer_key
+CONSUMER_SECRET = consumer_secret
 
 # Access:
-ACCESS_TOKEN  = ''
-ACCESS_SECRET = ''
+ACCESS_TOKEN  = access_token
+ACCESS_SECRET = access_secret
 
 # We import our access keys:
 from credentials import *    # This will allow us to use the keys as variables
